@@ -2,6 +2,7 @@
     <ul class="navbar-list">
         <li class="navbar-item"><a href="{{ route('homepage') }}">The Aulab Post</a></li>
         <li class="navbar-item"><a href="{{ route('homepage') }}">Homepage</a></li>
+        <li class="navbar-item"><a href="{{ route('article.index') }}">Articles</a></li>
         @guest
         <li class="navbar-item"><a href="{{ route('login') }}">Login</a></li>
         <li class="navbar-item"><a href="{{ route('register') }}">Register</a></li>

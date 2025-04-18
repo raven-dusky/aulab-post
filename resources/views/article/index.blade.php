@@ -1,9 +1,4 @@
 <x-layout>
-    @if(session('message'))
-        <div>
-            {{ session('message') }}
-        </div>
-    @endif
     <div class="articles-container">
         @foreach($articles as $article)
         <div class="article-box">
