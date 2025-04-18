@@ -1,0 +1,145 @@
+/* Root Variabiles */
+:root {
+    --body-color: #F4F4F0;
+    --background-color: #FFFBFE;
+    --text-color: #0B0A07;
+    --border-color: #0B0A07;
+    --primary-color: #B02E0C;
+    --secondary-color: #F0EC57;
+}
+
+/* General Settings */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('/public/fonts/SpaceGrotesk-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'SpaceGrotesk';
+    background-color: var(--body-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar-item {
+    padding: 25px;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+}
+
+.navbar-item a {
+    color: var(--text-color);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-item:first-child {
+    margin-right: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar-item:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-item:nth-child(2) a {
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+}
+
+.navbar-item:nth-child(2):hover a {
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+}
+
+.navbar-item:nth-child(3) {
+    border-left: 1px solid var(--border-color);
+}
+
+.navbar-item:nth-child(4) {
+    background-color: var(--text-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.navbar-item:nth-child(3):hover,
+.navbar-item:nth-child(4):hover {
+    background-color: var(--primary-color);
+}
+
+.navbar-item:nth-child(4) a {
+    color: var(--background-color);
+}
+
+.navbar-item:nth-child(4):hover a {
+    color: var(--text-color);
+}
+
+/* Auth Forms */
+.auth-container {
+    display: grid;
+    place-items: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 60vw;
+}
+
+.auth-label {
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.auth-input {
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-family: 'SpaceGrotesk';
+    font-size: 21px;
+}
+
+.auth-input:focus {
+    outline: 1px solid  var(--primary-color);
+}
+
+.auth-btn {
+    padding: 10px;
+    color: white;
+    background-color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-family: 'SpaceGrotesk';
+    font-size: 21px;
+}
+
+.auth-btn:hover {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px black;
+    transition: all .15s ease;
+}
