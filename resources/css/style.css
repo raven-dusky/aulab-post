@@ -143,3 +143,9 @@ body {
     box-shadow: 5px 5px black;
     transition: all .15s ease;
 }
+
+/* Create Article */
+.textarea {
+    height: 100px;
+    resize: none;
+}

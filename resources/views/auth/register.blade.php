@@ -3,9 +3,9 @@
         <form class="auth-form" method="POST" action="{{ route('register') }}">
             @csrf
             <label class="auth-label" for="username">Username</label>
-            <input class="auth-input" type="text" id="username" name="name" required/>
+            <input class="auth-input" type="text" id="username" name="name" value="{{ old('name') }}" required/>
             <label class="auth-label" for="email">E-mail</label>
-            <input class="auth-input" type="email" id="email" name="email" required/>
+            <input class="auth-input" type="email" id="email" name="email" value="{{ old('email') }}" required/>
             <label class="auth-label" for="password">Password</label>
             <input class="auth-input" type="password" id="password" name="password" required/>
             <label class="auth-label" for="password_confirmation">Confirm Password</label>
