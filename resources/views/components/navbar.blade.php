@@ -9,6 +9,9 @@
         @endguest
         @auth
         <li class="navbar-item"><a href="{{ route('careers') }}">Careers</a></li>
+        @if(Auth::user()->is_admin)
+            <li class="navbar-item"><a href="{{ route('admin.dashboard') }}">Administration</a></li>
+        @endif
         <li class="navbar-item"><a href="{{ route('article.create') }}">Create</a></li>
         <li class="navbar-item"><a href="" onclick="event.preventDefault(); document.querySelector('#logout').submit()" >Logout</a></li>
         <form method="POST" action="{{ route('logout') }}" id="logout">

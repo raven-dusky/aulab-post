@@ -4,6 +4,11 @@
             {{ session('message') }}
         </div>
     @endif
+    @if(session('alert'))
+        <div>
+            {{ session('alert') }}
+        </div>
+    @endif
     <div class="articles-container">
         @foreach($articles as $article)
         <div class="article-box">
